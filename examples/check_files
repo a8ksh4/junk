@@ -1,0 +1,19 @@
+#!/bin/bash
+
+while read FILENAME
+do
+    FOUND=N
+
+    for WHERE in ANSWERS EXAMPLES SETUP
+    do
+        if [ -e "$WHERE/$FILENAME" ]
+        then
+            FOUND=Y
+            break
+        fi
+    done
+    if [ "$FOUND" == "N" ]
+    then
+        echo "$FILENAME not found"
+    fi
+done < /tmp/pyintel_files.txt
