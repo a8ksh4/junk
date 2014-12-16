@@ -1,0 +1,110 @@
+@charset "utf-8";
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #10a8ff;
+	min-width: 1100px;
+}
+
+
+.thrColHybHdr #container { 
+	width: 1050px;
+	height: 810px;
+	background: url(right_bar_test.PNG) repeat-x top left;
+	text-align: left; 
+}  
+.thrColHybHdr #header { 
+	padding: 0 10px; 
+} 
+.thrColHybHdr #header h1 {
+	margin: 0;
+	padding: 10px 0;
+}
+
+canvas {
+	border: 1px solid #10a8ff;
+}
+
+
+
+table, tr, td {
+	border: 0px solid;
+}
+
+td {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	verital-align: center;
+}
+
+.thrColHybHdr #sidebar1 {
+	text-align: center;
+	margin: 50px 0;
+	float: left; 
+	width: 100px; /* since this element is floated, a width must be given */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+	background: url(right_bar_test.PNG) repeat-x top left;
+	min-height: 810px;
+}
+.thrColHybHdr #sidebar2 {
+	margin: 50px 0;
+	float: right;
+	font-size: 12px;
+	min-height: 810px;
+	background: url(right_bar_test.PNG);
+	background-repeat: no-repeat;
+	background-position: top;
+	width: 240px; /* since this element is floated, a width must be given */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.thrColHybHdr #sidebar1 h3, .thrColHybHdr #sidebar1 p, .thrColHybHdr #sidebar2 p, .thrColHybHdr #sidebar2 h3 {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+.thrColHybHdr #mainContent {
+ 	margin: 50px 0 0 100px; /* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */ 
+	padding: 20px 8em 0 25px; /* padding here creates white space "inside the box." */
+	min-height: 810px;
+	min-height: 810px;
+	background:url(main_bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #10a8ff;
+
+} 
+.thrColHybHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+} 
+.thrColHybHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+#space {
+	width: 3em;
+	height: 3em;
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}

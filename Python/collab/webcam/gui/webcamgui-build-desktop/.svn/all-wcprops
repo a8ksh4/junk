@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/collab/!svn/ver/237/webcam/gui/webcamgui-build-desktop
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/collab/!svn/ver/235/webcam/gui/webcamgui-build-desktop/Makefile
+END
+ui_mainwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/collab/!svn/ver/235/webcam/gui/webcamgui-build-desktop/ui_mainwindow.h
+END
+Makefile.Debug
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/collab/!svn/ver/235/webcam/gui/webcamgui-build-desktop/Makefile.Debug
+END
+Makefile.Release
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/collab/!svn/ver/235/webcam/gui/webcamgui-build-desktop/Makefile.Release
+END

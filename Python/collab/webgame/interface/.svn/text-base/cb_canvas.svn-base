@@ -1,0 +1,11 @@
+<canvas id="radar" width="650" height="650" style="border: 1px solid #10a8ff;">Please upgrade your browser to support HTML5</canvas>
+
+<script type="text/javascript">
+
+var c=document.getElementById("radar");
+var r=c.getContext("2d");
+r.beginPath();
+r.arc(325,325,250,0,2*Math.PI);
+r.stroke("#10a8ff");
+
+</script>

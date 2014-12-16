@@ -1,0 +1,16 @@
+Python:
+pyside - needed for qt and ipython qtconsole (or pyqt4? Documentation of pyside looks better and pyside might be more popular)
+ipython - very handy
+python 2.6 (needed for psyco) - http://www.python.org/download/releases/2.6.6/
+psyco - super quick - http://www.voidspace.org.uk/python/modules.shtml#psyco
+gvim - 
+pygments - needed for ipython qtconsole
+pyzmq - needed for ipython qtconsole
+twisted - network library used by ipython-wx (not important)
+
+https://github.com/zeromq/pyzmq/downloads https://github.com/downloads/zeromq/pyzmq/pyzmq-2.1.4.win32-py2.6.msi
+setup-tools - used to install some of above with easy_install
+scipy - not sure why, might be useful package of matplotlib and other math stuff
+
+ipython -e sh
+ipython-qtconsole --profile=pysh --colors=linux

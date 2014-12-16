@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/collab/!svn/ver/368/webgame/apache2/conf.d
+END
+javascript-common.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/collab/!svn/ver/368/webgame/apache2/conf.d/javascript-common.conf
+END
+security
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/collab/!svn/ver/368/webgame/apache2/conf.d/security
+END
+charset
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/collab/!svn/ver/368/webgame/apache2/conf.d/charset
+END
+localized-error-pages
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/conf.d/localized-error-pages
+END
+phpmyadmin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/conf.d/phpmyadmin.conf
+END

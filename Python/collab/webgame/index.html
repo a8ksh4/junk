@@ -1,0 +1,49 @@
+<!DOCTYPE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#home").click(function(){
+		$("#mainContent").load('home');
+	});
+	$("#warps").click(function(){
+		$("#mainContent").load('warps');
+	});
+	$("#cosmo").click(function(){
+		$("#mainContent").load('cosmo');
+	});
+	$("#shado").click(function(){
+		$("#mainContent").load('shado');
+	});
+})
+</script>
+
+</head>
+
+<body class="twoColFixLt">
+
+<div id="container">
+  <div id="sidebar1">
+  <a id="home">Home</a><br /> <br />
+  <a id="warps">All Warp Gates</a><br /><br />
+  <a id="cosmo">Cosmo</a><br /><br />
+  <a id="shado">Shado</a><br /><br />
+
+   </div>
+  <div id="mainContent">
+    <p>Use of this tool is restricted to only Authorized Personel and solely for carrying actions against the enemy. If you are in any way confused as to who they may be, please leave this site immedietly as the following informaiton provided will only  offend your peacefull mind. The unauthorized use of this data will place you on a hit list as this information is "Classified" and the sharing of its contents equals instant death in the CC Univers.</p>
+    
+    <p>Proceed at your own risk. On the left hand side is the navigation column. Click any name to see where they have warped to and click "All Warp Gates" For a list of all the player warps in the game.</p>
+    
+    <p>Note, this information is only as accurate as the date shown above each map. The data is collected manually, parsed manually and then uploaded to this site manually. If you need more current data, please pm Xariec or find him on GroupMe.</p>
+    <p>&nbsp;</p>
+    <p>Thank You and Happy Hunting :)</p>
+    <p>Xariec</p>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

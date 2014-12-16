@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.6 -->
+  <!-- interface-naming-policy toplevel-contextual -->
+  <widget class="GtkWindow" id="windowMain">
+    <property name="visible">True</property>
+    <property name="title" translatable="yes">window1</property>
+    <signal name="button_press_event" handler="on_windowMain_button_press_event"/>
+    <signal name="motion_notify_event" handler="on_windowMain_motion_notify_event"/>
+    <signal name="button_release_event" handler="on_windowMain_button_release_event"/>
+    <child>
+      <widget class="GtkVBox" id="vboxMain">
+        <property name="visible">True</property>
+        <property name="border_width">4</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <widget class="GtkButton" id="buttonClickMe">
+            <property name="label" translatable="yes">_click me</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="on_buttonClickMe_clicked"/>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

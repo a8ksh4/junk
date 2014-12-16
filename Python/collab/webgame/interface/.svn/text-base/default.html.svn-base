@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<link href="default.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#cb").click(function(){
+		$("#mainContent").load('/ui/objects.py');
+	});
+	$("#ab").click(function(){
+		$("#mainContent").load('ab');
+	});
+	$("#hanger").click(function(){
+		$("#mainContent").load('hanger');
+		$("#sidebar2").load('hanger');
+	});
+});
+
+
+
+function foo(filename,id)
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+	{
+	xmlhttp=new XMLHttpRequest();
+	}
+else
+	{
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+xmlhttp.onreadystatechange=function()
+	{
+	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+		document.getElementById(id).innerHTML=xmlhttp.responseText;
+		}
+	}
+xmlhttp.open("GET",filename,true);
+xmlhttp.send();
+}
+
+
+</script>
+</head>
+
+<body class="thrColHybHdr">
+<center>
+<div id="container">
+  <div id="header">
+    <h1>Header</h1>
+  <!-- end #header --></div>
+  <div id="sidebar1"><br /><br />
+  <a id="cb">Commander Bridge</a><br /><br />
+  <a id="ab">Admiral Bridge</a><br /><br />
+  <a id="hanger">Hanger</a><br /><br />
+  Engine Room<br /><br />
+  Sick Bay<br /><br />
+  GDC<br /><br />
+  GEC<br /><br />
+  GAC
+  <!-- end #sidebar1 --></div>
+  <div id="sidebar2">
+    <h3>Systems</h3>
+    <p>This area will provide the options to interact with the environment. You will be able to scan items, objects, and other players. Attack other players or the alians race (We need to name them), or interact with buildings and objects you own. </p>
+    <p>Just for testing, pretend you have a planet selected in the view pane. Click scan below to scan the planet<br /><br /><br /> <button type="button" onclick="foo('scan.txt','sidebar2')"> Scan</button></p>
+  <!-- end #sidebar2 --></div>
+  <div id="mainContent">
+  This is the area that the main content will sit in. When you are on your landing page, you will see your current stats.
+  Every other page you click on will refresh this area, as well as other areas depending on what you click on.
+  
+  :)
+ 
+
+<!-- <button type="button" onclick="foo('/ui/test.py','mainContent')"> Scan</button> -->
+	 Testing Views:</div><!-- end #mainContent -->
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+   <div id="footer">
+    <p>Footer</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</center>
+</body>
+</html>

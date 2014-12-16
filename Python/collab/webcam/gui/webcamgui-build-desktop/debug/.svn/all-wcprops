@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/collab/!svn/ver/237/webcam/gui/webcamgui-build-desktop/debug
+END
+webcamgui.exe
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/collab/!svn/ver/237/webcam/gui/webcamgui-build-desktop/debug/webcamgui.exe
+END
+moc_mainwindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/collab/!svn/ver/235/webcam/gui/webcamgui-build-desktop/debug/moc_mainwindow.cpp
+END
+qrc_resource.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/collab/!svn/ver/232/webcam/gui/webcamgui-build-desktop/debug/qrc_resource.cpp
+END

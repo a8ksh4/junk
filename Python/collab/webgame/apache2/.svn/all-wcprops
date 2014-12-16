@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/collab/!svn/ver/368/webgame/apache2
+END
+magic
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/collab/!svn/ver/368/webgame/apache2/magic
+END
+envvars
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/collab/!svn/ver/368/webgame/apache2/envvars
+END
+apache2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/collab/!svn/ver/368/webgame/apache2/apache2.conf
+END
+httpd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/collab/!svn/ver/368/webgame/apache2/httpd.conf
+END
+ports.conf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/collab/!svn/ver/368/webgame/apache2/ports.conf
+END

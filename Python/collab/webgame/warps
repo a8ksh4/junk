@@ -1,0 +1,73 @@
+<p> All Warps Gates Known to Xariec</p>
+<p> Last updated September 12th, 2012 by Xariec</p>
+<center>
+<canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #EFFFFF;" onmousemove="myMouse(event)">
+Your browser does not support the HTML5 canvas tag. Please open in Google Chrome.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d")
+ctx.beginPath();ctx.arc(	12	,	320	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Cosmo 6,160	",	17	,	325	);ctx.closePath();
+ctx.beginPath();ctx.arc(	48	,	104	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Misfit* 24,52	",	53	,	109	);ctx.closePath();
+ctx.beginPath();ctx.arc(	56	,	114	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Black Dragon 28,57	",	61	,	119	);ctx.closePath();
+ctx.beginPath();ctx.arc(	78	,	582	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 39,291	",	83	,	587	);ctx.closePath();
+ctx.beginPath();ctx.arc(	84	,	742	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	SGT Epic 42,371	",	89	,	747	);ctx.closePath();
+ctx.beginPath();ctx.arc(	84	,	642	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Shattered* 42,321	",	89	,	647	);ctx.closePath();
+ctx.beginPath();ctx.arc(	110	,	312	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Dr Scott 55,156	",	115	,	317	);ctx.closePath();
+ctx.beginPath();ctx.arc(	120	,	260	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Commander Clark* 60,130	",	125	,	265	);ctx.closePath();
+ctx.beginPath();ctx.arc(	120	,	326	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	KRISTAL WINGFIRE* 60,163	",	125	,	331	);ctx.closePath();
+ctx.beginPath();ctx.arc(	144	,	740	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Rear Admiral Theboss25 72,370	",	149	,	745	);ctx.closePath();
+ctx.beginPath();ctx.arc(	200	,	838	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Xariec 100,419	",	205	,	843	);ctx.closePath();
+ctx.beginPath();ctx.arc(	214	,	674	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Luther 107,337	",	219	,	679	);ctx.closePath();
+ctx.beginPath();ctx.arc(	218	,	794	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Sgt Wolf 109,397	",	223	,	799	);ctx.closePath();
+ctx.beginPath();ctx.arc(	268	,	536	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 134,268	",	273	,	541	);ctx.closePath();
+ctx.beginPath();ctx.arc(	274	,	808	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Scaramore 137,404	",	279	,	813	);ctx.closePath();
+ctx.beginPath();ctx.arc(	288	,	582	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Nightwalker 144,291	",	293	,	587	);ctx.closePath();
+ctx.beginPath();ctx.arc(	318	,	840	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Short Fuse* 159,420	",	323	,	845	);ctx.closePath();
+ctx.beginPath();ctx.arc(	326	,	850	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	The Chacelor 163,425	",	331	,	855	);ctx.closePath();
+ctx.beginPath();ctx.arc(	342	,	198	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 171,99	",	347	,	203	);ctx.closePath();
+ctx.beginPath();ctx.arc(	362	,	822	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Rakker 181,411	",	367	,	827	);ctx.closePath();
+ctx.beginPath();ctx.arc(	382	,	42	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Brandt420 191,21	",	387	,	47	);ctx.closePath();
+ctx.beginPath();ctx.arc(	390	,	532	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Atlantis the Great 195,266	",	395	,	537	);ctx.closePath();
+ctx.beginPath();ctx.arc(	412	,	816	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 206,408	",	417	,	821	);ctx.closePath();
+ctx.beginPath();ctx.arc(	412	,	872	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Scorpion 206,436	",	417	,	877	);ctx.closePath();
+ctx.beginPath();ctx.arc(	434	,	854	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Daemon Fluff* 217,427	",	439	,	859	);ctx.closePath();
+ctx.beginPath();ctx.arc(	442	,	650	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Darth Fluff 221,325	",	447	,	655	);ctx.closePath();
+ctx.beginPath();ctx.arc(	472	,	766	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	MerX* 236,383	",	477	,	771	);ctx.closePath();
+ctx.beginPath();ctx.arc(	554	,	622	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	thefilthyone 277,311	",	559	,	627	);ctx.closePath();
+ctx.beginPath();ctx.arc(	582	,	782	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Black Dragon 291,391	",	587	,	787	);ctx.closePath();
+ctx.beginPath();ctx.arc(	586	,	592	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 293,296	",	591	,	597	);ctx.closePath();
+ctx.beginPath();ctx.arc(	588	,	762	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Cael 294,381	",	593	,	767	);ctx.closePath();
+ctx.beginPath();ctx.arc(	646	,	382	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 323,191	",	651	,	387	);ctx.closePath();
+ctx.beginPath();ctx.arc(	652	,	584	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 326,292	",	657	,	589	);ctx.closePath();
+ctx.beginPath();ctx.arc(	658	,	582	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 329,291	",	663	,	587	);ctx.closePath();
+ctx.beginPath();ctx.arc(	666	,	610	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	JBT 333,305	",	671	,	615	);ctx.closePath();
+ctx.beginPath();ctx.arc(	706	,	398	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Acetexan* 353,199	",	711	,	403	);ctx.closePath();
+ctx.beginPath();ctx.arc(	706	,	532	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	QSK 353,266	",	711	,	537	);ctx.closePath();
+ctx.beginPath();ctx.arc(	744	,	678	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Bear 372,339	",	749	,	683	);ctx.closePath();
+ctx.beginPath();ctx.arc(	764	,	770	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 382,385	",	769	,	775	);ctx.closePath();
+ctx.beginPath();ctx.arc(	776	,	364	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 388,182	",	781	,	369	);ctx.closePath();
+ctx.beginPath();ctx.arc(	788	,	794	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Shado 394,397	",	793	,	799	);ctx.closePath();
+ctx.beginPath();ctx.arc(	790	,	280	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Elvis* 395,140	",	795	,	285	);ctx.closePath();
+ctx.beginPath();ctx.arc(	794	,	670	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	 397,335	",	799	,	675	);ctx.closePath();
+ctx.beginPath();ctx.arc(	796	,	208	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Stratus 398,104	",	801	,	213	);ctx.closePath();
+ctx.beginPath();ctx.arc(	802	,	424	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Rancid Fluff 401,212	",	807	,	429	);ctx.closePath();
+ctx.beginPath();ctx.arc(	814	,	472	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Luther 407,236	",	819	,	477	);ctx.closePath();
+ctx.beginPath();ctx.arc(	826	,	728	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Relic* 413,364	",	831	,	733	);ctx.closePath();
+ctx.beginPath();ctx.arc(	836	,	680	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Stuffed Fluff* 418,340	",	841	,	685	);ctx.closePath();
+ctx.beginPath();ctx.arc(	840	,	98	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	SG Major Gen* 420,49	",	845	,	103	);ctx.closePath();
+ctx.beginPath();ctx.arc(	842	,	196	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Lesai* 421,98	",	847	,	201	);ctx.closePath();
+ctx.beginPath();ctx.arc(	844	,	696	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	WGD118* 422,348	",	849	,	701	);ctx.closePath();
+ctx.beginPath();ctx.arc(	866	,	840	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	merlin* 433,420	",	871	,	845	);ctx.closePath();
+ctx.beginPath();ctx.arc(	880	,	718	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	QSK* 440,359	",	885	,	723	);ctx.closePath();
+ctx.beginPath();ctx.arc(	606	,	734	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	tecnosleeves 303,367	",	611	,	739	);ctx.closePath();
+ctx.beginPath();ctx.arc(	720	,	110	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	MasherRoy 360,55	",	725	,	115	);ctx.closePath();
+ctx.beginPath();ctx.arc(	38	,	18	,5,0,2*Math.PI);ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	Dano 19,9	",	43	,	23	);ctx.closePath();
+
+
+</script>
+
+</center>
+</div>

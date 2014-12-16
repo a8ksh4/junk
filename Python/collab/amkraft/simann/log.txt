@@ -1,0 +1,26 @@
+laptop 25 20:
+aria@akbu:~/simann$ time ./single2d 
+
+real	0m0.169s
+user	0m0.168s
+sys	0m0.000s
+aria@akbu:~/simann$ time python single2d.py
+Couldn't load psyco
+
+real	0m29.641s
+user	0m29.598s
+sys	0m0.004s
+aria@akbu:~/simann$ time python2.6 single2d.py
+
+real	0m6.374s
+user	0m6.356s
+sys	0m0.008s
+aria@akbu:~/simann$ time pypy single2d.py
+Couldn't load psyco
+
+real	0m9.571s
+user	0m9.517s
+sys	0m0.036s
+
+
+

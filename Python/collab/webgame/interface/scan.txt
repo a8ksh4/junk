@@ -1,0 +1,17 @@
+Scan Date: AUG-19-2352  --  19:01:35
+
+Item Scanned::
+Type		: Planet
+Size		: Medium
+Location	: 524,384
+Sector		: AP23NB
+
+Composition::
+O2		: 30%
+H2O	 	: 60%
+Carbon		: 40%
+Uranium		: .5%
+
+Notes:
+
+User Xariec appears to have a mining operation installed. There is room to start a second operation. The yeild of this planet will suffer if both mine at the same time.

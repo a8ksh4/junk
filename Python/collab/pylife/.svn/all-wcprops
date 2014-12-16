@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/collab/!svn/ver/302/pylife
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/collab/!svn/ver/8/pylife/.project
+END
+gridThing.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/collab/!svn/ver/302/pylife/gridThing.py
+END
+.pydevproject
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/collab/!svn/ver/9/pylife/.pydevproject
+END
+main-qt.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/collab/!svn/ver/248/pylife/main-qt.py
+END
+main-gtk.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/collab/!svn/ver/302/pylife/main-gtk.py
+END

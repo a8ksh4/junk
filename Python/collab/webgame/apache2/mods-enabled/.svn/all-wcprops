@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/collab/!svn/ver/368/webgame/apache2/mods-enabled
+END
+php5.load
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/php5.load
+END
+dir.load
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/dir.load
+END
+authn_file.load
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/authn_file.load
+END
+negotiation.load
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/negotiation.load
+END
+php5.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/php5.conf
+END
+setenvif.load
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/setenvif.load
+END
+dir.conf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/dir.conf
+END
+negotiation.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/negotiation.conf
+END
+mime.load
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/mime.load
+END
+authz_host.load
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/authz_host.load
+END
+setenvif.conf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/setenvif.conf
+END
+authz_user.load
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/authz_user.load
+END
+mime.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/mime.conf
+END
+reqtimeout.load
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/reqtimeout.load
+END
+autoindex.load
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/autoindex.load
+END
+dav_svn.load
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/dav_svn.load
+END
+auth_basic.load
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/auth_basic.load
+END
+reqtimeout.conf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/reqtimeout.conf
+END
+deflate.load
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/deflate.load
+END
+autoindex.conf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/autoindex.conf
+END
+dav_svn.conf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/dav_svn.conf
+END
+wsgi.load
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/wsgi.load
+END
+deflate.conf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/deflate.conf
+END
+wsgi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/wsgi.conf
+END
+python.load
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/python.load
+END
+status.load
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/status.load
+END
+env.load
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/env.load
+END
+status.conf
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/status.conf
+END
+alias.load
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/alias.load
+END
+alias.conf
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/alias.conf
+END
+authz_default.load
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/authz_default.load
+END
+cgi.load
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/cgi.load
+END
+authz_groupfile.load
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/authz_groupfile.load
+END
+dav.load
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/collab/!svn/ver/368/webgame/apache2/mods-enabled/dav.load
+END

@@ -1,0 +1,40 @@
+<p> Shado's Warps in the last 30 days </p>
+<p> Last updated September 12th, 2012 by Xariec</p>
+<center>
+<canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #EFFFFF;" onmousemove="myMouse(event)">
+Your browser does not support the HTML5 canvas tag. Please open in Google Chrome.
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d")
+ctx.beginPath();ctx.arc(	676	,	136	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	338,68	",	681	,	141	);ctx.closePath();
+ctx.beginPath();ctx.arc(	190	,	728	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	95,364	",	195	,	733	);ctx.closePath();
+ctx.beginPath();ctx.arc(	386	,	724	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	193,362	",	391	,	729	);ctx.closePath();
+ctx.beginPath();ctx.arc(	390	,	726	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	195,363	",	395	,	731	);ctx.closePath();
+ctx.beginPath();ctx.arc(	190	,	728	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	95,364	",	195	,	733	);ctx.closePath();
+ctx.beginPath();ctx.arc(	470	,	576	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	235,288	",	475	,	581	);ctx.closePath();
+ctx.beginPath();ctx.arc(	666	,	142	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	333,71	",	671	,	147	);ctx.closePath();
+ctx.beginPath();ctx.arc(	392	,	728	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	196,364	",	397	,	733	);ctx.closePath();
+ctx.beginPath();ctx.arc(	272	,	190	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	136,95	",	277	,	195	);ctx.closePath();
+ctx.beginPath();ctx.arc(	624	,	226	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	312,113	",	629	,	231	);ctx.closePath();
+ctx.beginPath();ctx.arc(	674	,	136	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	337,68	",	679	,	141	);ctx.closePath();
+ctx.beginPath();ctx.arc(	666	,	126	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	333,63	",	671	,	131	);ctx.closePath();
+ctx.beginPath();ctx.arc(	160	,	226	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	80,113	",	165	,	231	);ctx.closePath();
+ctx.beginPath();ctx.arc(	474	,	582	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	237,291	",	479	,	587	);ctx.closePath();
+ctx.beginPath();ctx.arc(	202	,	520	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	101,260	",	207	,	525	);ctx.closePath();
+ctx.beginPath();ctx.arc(	212	,	816	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	106,408	",	217	,	821	);ctx.closePath();
+ctx.beginPath();ctx.arc(	626	,	94	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	313,47	",	631	,	99	);ctx.closePath();
+ctx.beginPath();ctx.arc(	288	,	176	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	144,88	",	293	,	181	);ctx.closePath();
+ctx.beginPath();ctx.arc(	376	,	322	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	188,161	",	381	,	327	);ctx.closePath();
+ctx.beginPath();ctx.arc(	286	,	182	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	143,91	",	291	,	187	);ctx.closePath();
+ctx.beginPath();ctx.arc(	376	,	322	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	188,161	",	381	,	327	);ctx.closePath();
+ctx.beginPath();ctx.arc(	286	,	182	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	143,91	",	291	,	187	);ctx.closePath();
+ctx.beginPath();ctx.arc(	212	,	616	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	106,308	",	217	,	621	);ctx.closePath();
+ctx.beginPath();ctx.arc(	372	,	380	,5,0,2*Math.PI);	ctx.fillStyle = "#00FF00";ctx.fill();ctx.stroke();ctx.font="12px Arial";ctx.fillStyle = "#EFFFFF";ctx.fillText("	186,190	",	377	,	385	);ctx.closePath();
+
+</script>
+
+</center>
+</div>
