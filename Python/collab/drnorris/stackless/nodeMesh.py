@@ -12,12 +12,15 @@ class NodeMeshThing:
         meshState = [False for i in range(self.numberOfNodes)]
         
         self.instChannel = stackless.channel()
-        self.meshChannel = [stackless.channel() for i in range(self.numberOfNodes)]
+        self.meshChannel = [stackless.channel() for \
+                                i in range(self.numberOfNodes)]
         
         self.meshNode = [None for i in range(numberOfNodes)]
         
         for node in range(len(self.meshNode)):
-            self.meshNode[node] = stackless.tasklet(self.nodeFunction)(node, self.instChannel, self.meshChannel)
+            self.meshNode[node] = \
+                stackless.tasklet(self.nodeFunction)(node, \
+                        self.instChannel, self.meshChannel)
 
     def nodeFunction(self, myID, instChannel, channels):
         self.myState = False
@@ -45,12 +48,14 @@ class NodeMeshThing:
                         for chan in range(len(channels)):
                             if not chan == myID:
                                 if chanSentTo[chan] == False:
-                                    print myID, '- chan bal:  ', chan, channels[chan].balance
+                                    print myID, '- chan bal:  ', chan, \
+                                            channels[chan].balance
                                     if not channels[nodeNum].balance == 0:
                                         print myID, '- receiving: ', chan
                     if recCount < numNeighbors:
                         for chanNum in range(len(channels)):
-                            print myID, '- nStat', chanNum, channels[chanNum].balance
+                            print myID, '- nStat', chanNum, \
+                                    channels[chanNum].balance
 
                             if chanNum == myID:
                                 continue

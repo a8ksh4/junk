@@ -13,13 +13,16 @@ class DingDong:
         self.chainChannel = [stackless.channel() for i in range(chainSize)]
         self.chain = [None for i in range(chainSize)]
         for nodeID in range(chainSize):
-            self.chain[nodeID] = stackless.tasklet(self.nodeFunction)(nodeID,
-                                                                      self.instrChannel,
-                                                                      self.chainChannel[nodeID],
-                                                                      self.chainChannel[(nodeID -1) % self.chainSize],
-                                                                      self.chainChannel[(nodeID + 1) % self.chainSize])
+            self.chain[nodeID] = \
+                    stackless.tasklet(
+                        self.nodeFunction)(nodeID,
+                        self.instrChannel,
+                        self.chainChannel[nodeID],
+                        self.chainChannel[(nodeID -1) % self.chainSize],
+                        self.chainChannel[(nodeID + 1) % self.chainSize])
     
-    def nodeFunction(self, myID, instrChannel, myChannel, lnChannel, rnChannel):
+    def nodeFunction(self, myID, instrChannel, 
+                     myChannel, lnChannel, rnChannel):
         print myID
         myState = False
         while True:
