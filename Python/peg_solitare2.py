@@ -76,7 +76,8 @@ def genNext():
     #printBoard()
     numLeft = countBoard()
     #print LEVEL, numLeft, " - ", LEVEL + numLeft, " : ", len(listMoves()),
-    if numLeft <= LIMIT:
+    #if numLeft <= LIMIT:
+    if numLeft <= LIMIT and BOARDS[LEVEL][3][3] == True :
         print LEVEL, numLeft, " - ", LEVEL + numLeft
         print MOVES
         #for row in board:
