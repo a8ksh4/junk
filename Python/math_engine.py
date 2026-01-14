@@ -2,7 +2,9 @@
 '''tokenizer and a few math operations;
 exploring how this stuff might work.'''
 
+import argparse
 import math
+import re
 from types import NotImplementedType
 
 OPPS = {  # Follow order of operations
@@ -25,6 +27,23 @@ CONSTANTS = {
     'e': math.e,
 }
 
+def parse_args():
+    '''Parses the args!'''
+    parser = argparse.ArgumentParser(
+        description='A simple math expression tokenizer and evaluator.'
+    )
+    parser.add_argument('-e', '--expression', type=str,
+                        help='Mathematical expression to evaluate.')
+    parser.add_argument('-s', '--solve_for', type=str,
+                        help='Variable to solve for.')
+    parser.add_argument('-g', '--givens', type=str, default='',
+                        help='Comma-separated list of variable=value pairs for givens.')
+    parser.add_argument('-t', '--test', action='store_true',
+                        help='Run test cases.')
+    args = parser.parse_args()
+    return args
+
+
 def cleanup(expression):
     '''This will eventually handle anything needed to 
     sanitize the expression for the tokenizer.  E.g. it will convert:
@@ -32,6 +51,11 @@ def cleanup(expression):
     * "3pi" into "3 * pi"
     * "1+2" into "1 + 2"
     '''
+    # number times variable/constant -> number * variable/constant
+    # pattern = r'(\d*(\.\d+)?)([a-zA-Z_(]+)'
+    pattern = r'((\d+\.)?\d+)([a-zA-Z_(]+)'
+    replacement = r'\1 * \3'
+    expression = re.sub(pattern, replacement, expression)
     return expression
 
 
@@ -62,6 +86,14 @@ def structure(tokens, foo=0):
     '''This is a recursive function that will step through tokens and
     generate a hierarchal structure representing the order of operations.
     '''
+    if '=' in tokens:
+        eq_index = tokens.index('=')
+        left = tokens[:eq_index]
+        right = tokens[eq_index + 1:]
+        left_structured = structure(left, foo=foo+1)
+        right_structured = structure(right, foo=foo+1)
+        return ['=', left_structured, right_structured]
+
     # Collapse parens first
     while True:
         open_paren = None
@@ -161,7 +193,86 @@ def solve_or_reduce(node):
     return node
 
 
+def simple_reduce_node(node):
+    '''Paired with the commutative node function, we can
+    combine like terms in a simple way here.'''
+    numeric_values = []
+    other_values = []
+    oper = node[0]
+    assert oper in ('+', '*'), "simple_reduce_node only works for + and *"
+    for item in node[1:]:
+        if isinstance(item, (int, float)):
+            numeric_values.append(item)
+        else:
+            other_values.append(item)
+    oper_func = OPPS[oper]
+    print(numeric_values, other_values, oper_func, oper)
+    if numeric_values:
+        total = oper_func(*numeric_values)
+        other_values.insert(0, total)
+
+    node = [oper] + other_values
+    return node
+
+
+def collapse_commutative_nodes(node):
+    '''Check nested nodes for common operators to simplify if possible.
+    E.g. ['+', 1, ['+', 2, y]] can become ['+', 3, y].
+    Starting with + and *, tbd how this will work for - and /, etc.'''
+    if not isinstance(node, list):
+        return node
+    oper = node[0]
+    if oper not in ('+', '*'):
+        return node
+    values = []
+    for item in node[1:]:
+        if isinstance(item, list) and item[0] == oper:
+            for subitem in item[1:]:
+                values.append(subitem)
+        else:
+            values.append(item)
+    node = [oper] + values
+    node = simple_reduce_node(node)
+    return node
+
+
+def update_constants(givens):
+    '''Update CONSTANTS dict with any provided givens...'''
+    givens = givens.split(',')
+    for given in givens:
+        var, val = given.strip().split('=')
+        var = var.strip()
+        val = val.strip()
+        try:
+            val = float(val)
+        except ValueError:
+            print(f'Given value for {var} is not numeric: {val}')
+            continue
+        CONSTANTS[var] = val
+
+
+def main(args):
+    '''Main func!'''
+    input_expr = args.expression
+    update_constants(args.givens)
+
+    input_expr = cleanup(input_expr)
+    tokens = tokenize(input_expr)
+    structured = structure(tokens)
+    print(f'Initial structured: {structured}')
+    structured = recurse_apply(structured, collapse_commutative_nodes)
+    print(f'After collapse_commutative_nodes: {structured}')
+    structured = recurse_apply(structured, solve_or_reduce)
+    print(f'Final structured: {structured}')
+
+
 if __name__ == '__main__':
+    ARGS = parse_args()
+    if not ARGS.test:
+        main(ARGS)
+        exit(0)
+
+    # Test cases
     EXAMPLES = [
         '1 + 2',
         '3 * 2 + 5 / 7',
@@ -171,6 +282,10 @@ if __name__ == '__main__':
         '3 + 4 * 2 / ( 1 - 5 ) ^ 3',
         'sin( 0 ) + cos( ( 3 * pi ) / 2 )',
         'exp( 2 , 3 ) + log( 10 )',
+        '2x + 3 ** 2',
+        '5 * n ** 2 + 2 * n ** 3 - 7',
+        'y = 2x + 5',
+        'm = 3.3n - 4.4',
     ]
     EX_STRUCTURED = [
         ('+', 1, 2),
@@ -183,11 +298,15 @@ if __name__ == '__main__':
         print(f'\nInput: "{EX}"')
 
         EX = cleanup(EX)
+        print(f'Cleaned: "{EX}"')
         TOKENS = tokenize(EX)
         print(f'Tokens: {TOKENS}')
 
         STRUCTURED = structure(TOKENS)
         print(f'Structured: {STRUCTURED}')
+
+        STRUCTURED = recurse_apply(STRUCTURED, collapse_commutative_nodes)
+        print(f'After collapse_commutative_nodes: {STRUCTURED}')
 
         STRUCTURED = recurse_apply(STRUCTURED, solve_or_reduce)
         print(f'After solve_or_reduce: {STRUCTURED}')
